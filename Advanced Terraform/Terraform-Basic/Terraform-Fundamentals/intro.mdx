@@ -1,0 +1,60 @@
+# Terraform Fundamentals
+
+Terraform is an open-source Infrastructure as Code tool that allows you to define and provision infrastructure using a declarative configuration language.
+
+## Core Concepts
+
+- **Providers**: Plugins that interact with APIs of cloud platforms
+- **Resources**: Infrastructure components like EC2 instances, VPCs
+- **State**: Terraform's record of your infrastructure
+- **Configuration**: HCL files defining your infrastructure
+
+## Basic Workflow
+
+1. **Write** - Define infrastructure in .tf files
+2. **Plan** - Preview changes with `terraform plan`
+3. **Apply** - Create infrastructure with `terraform apply`
+4. **Destroy** - Remove infrastructure with `terraform destroy`
+
+<QuizSection
+  title="Terraform Fundamentals Quiz"
+  intro="Test your Terraform knowledge."
+  nextLessonHref="./advanced-concepts"
+  questions={[
+    {
+      id: 'q1',
+      question: 'What language does Terraform use for configuration?',
+      options: [
+        { id: 'json', label: 'JSON' },
+        { id: 'yaml', label: 'YAML' },
+        { id: 'hcl', label: 'HCL (HashiCorp Configuration Language)' },
+        { id: 'xml', label: 'XML' },
+      ],
+      correctOptionId: 'hcl',
+      explanation: 'Terraform uses HCL (HashiCorp Configuration Language) for writing configuration files.',
+    },
+    {
+      id: 'q2',
+      question: 'Which command previews infrastructure changes?',
+      options: [
+        { id: 'apply', label: 'terraform apply' },
+        { id: 'plan', label: 'terraform plan' },
+        { id: 'init', label: 'terraform init' },
+        { id: 'destroy', label: 'terraform destroy' },
+      ],
+      correctOptionId: 'plan',
+      explanation: 'terraform plan shows what changes will be made to your infrastructure.',
+    },
+  ]}
+/>
+
+<SummarySection
+  title="Terraform Fundamentals Summary"
+  intro="Essential Terraform concepts for getting started."
+  cards={[
+    { title: 'Providers', body: <>Plugins that connect Terraform to cloud platforms and services.</>, tags: ['core'], variant: 'accentAlt' },
+    { title: 'Resources', body: <>Infrastructure components defined in your Terraform configuration.</>, tags: ['core'], variant: 'glass' },
+    { title: 'State Management', body: <>Terraform tracks infrastructure state to manage changes effectively.</>, tags: ['state'], variant: 'outline' },
+    { title: 'HCL Language', body: <>Declarative configuration language for defining infrastructure.</>, tags: ['language'], variant: 'accentAlt' }
+  ]}
+/>
