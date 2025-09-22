@@ -1,0 +1,129 @@
+# Infrastructure as Code (IaC)
+
+Infrastructure as Code (IaC) is a practice that manages and provisions computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
+
+![alt text](assets/image.png)
+
+## What is Infrastructure as Code?
+
+IaC treats infrastructure the same way developers treat application code. Instead of manually configuring servers, networks, and other infrastructure components through graphical interfaces or command-line tools, you define your infrastructure using code files that can be version controlled, tested, and automated.
+
+## Key Benefits
+
+- **Consistency**: Eliminates configuration drift and ensures environments are identical
+- **Speed**: Rapidly deploy and scale infrastructure
+- **Cost Control**: Better resource management and optimization
+- **Version Control**: Track changes and rollback when needed
+- **Collaboration**: Teams can review and collaborate on infrastructure changes
+
+## Popular IaC Tools
+
+- **Terraform**: Multi-cloud infrastructure provisioning
+- **AWS CloudFormation**: Native AWS infrastructure management
+- **Ansible**: Configuration management and automation
+- **Pulumi**: Modern IaC using familiar programming languages
+
+## IaC vs Traditional Infrastructure Management
+
+| Traditional | Infrastructure as Code |
+|-------------|----------------------|
+| Manual configuration | Automated provisioning |
+| GUI-based setup | Code-based definitions |
+| Inconsistent environments | Reproducible infrastructure |
+| Time-consuming changes | Rapid deployment |
+| Limited collaboration | Version-controlled teamwork |
+
+<QuizSection
+  title="Lesson Quiz"
+  intro="Test your understanding of Infrastructure as Code concepts."
+  nextLessonHref="./terraform-basics"
+  questions={[
+    {
+      id: 'q1',
+      question: 'What is the primary benefit of Infrastructure as Code?',
+      options: [
+        { id: 'gui', label: 'Better graphical interfaces' },
+        { id: 'consistency', label: 'Consistent and reproducible infrastructure' },
+        { id: 'cost', label: 'Always reduces costs' },
+        { id: 'complexity', label: 'Increases system complexity' },
+      ],
+      correctOptionId: 'consistency',
+      explanation: 'IaC ensures consistent and reproducible infrastructure by treating infrastructure as code that can be version controlled and automated.',
+    },
+    {
+      id: 'q2',
+      question: 'Which tool is AWS native for Infrastructure as Code?',
+      options: [
+        { id: 'terraform', label: 'Terraform' },
+        { id: 'ansible', label: 'Ansible' },
+        { id: 'cloudformation', label: 'AWS CloudFormation' },
+        { id: 'pulumi', label: 'Pulumi' },
+      ],
+      correctOptionId: 'cloudformation',
+      explanation: 'AWS CloudFormation is the native AWS service for managing infrastructure as code.',
+    },
+    {
+      id: 'q3',
+      question: 'What does IaC help eliminate?',
+      options: [
+        { id: 'automation', label: 'Automation overhead' },
+        { id: 'drift', label: 'Configuration drift' },
+        { id: 'version', label: 'Version control needs' },
+        { id: 'testing', label: 'Infrastructure testing' },
+      ],
+      correctOptionId: 'drift',
+      explanation: 'IaC helps eliminate configuration drift by ensuring infrastructure is consistently deployed from the same code definitions.',
+    },
+    {
+      id: 'q4',
+      question: 'Which is NOT a characteristic of traditional infrastructure management?',
+      options: [
+        { id: 'manual', label: 'Manual configuration' },
+        { id: 'gui', label: 'GUI-based setup' },
+        { id: 'version', label: 'Version-controlled changes' },
+        { id: 'time', label: 'Time-consuming changes' },
+      ],
+      correctOptionId: 'version',
+      explanation: 'Version-controlled changes are a characteristic of IaC, not traditional infrastructure management.',
+    },
+    {
+      id: 'q5',
+      question: 'What makes IaC different from manual infrastructure setup?',
+      options: [
+        { id: 'speed', label: 'Only deployment speed' },
+        { id: 'code', label: 'Infrastructure defined as code files' },
+        { id: 'cloud', label: 'Only works in cloud environments' },
+        { id: 'cost', label: 'Always cheaper to implement' },
+      ],
+      correctOptionId: 'code',
+      explanation: 'IaC defines infrastructure using code files that can be version controlled, tested, and automated, unlike manual setup.',
+    },
+    {
+      id: 'q6',
+      question: 'Which tool supports multiple cloud providers for IaC?',
+      options: [
+        { id: 'cloudformation', label: 'AWS CloudFormation' },
+        { id: 'terraform', label: 'Terraform' },
+        { id: 'azure', label: 'Azure Resource Manager' },
+        { id: 'gcp', label: 'Google Cloud Deployment Manager' },
+      ],
+      correctOptionId: 'terraform',
+      explanation: 'Terraform is a multi-cloud IaC tool that supports AWS, Azure, GCP, and many other providers.',
+    },
+  ]}
+/>
+
+<SummarySection
+  title="Lesson Summary"
+  intro="Key Infrastructure as Code concepts to remember. Export to PDF for quick revision."
+  cards={[
+    { title: 'What is IaC', body: <>Infrastructure management through machine-readable definition files instead of manual configuration.</>, tags: ['definition'], variant: 'accentAlt' },
+    { title: 'Key Benefits', body: <>Consistency, speed, cost control, version control, and team collaboration.</>, tags: ['benefits'], variant: 'glass' },
+    { title: 'Popular Tools', body: <>Terraform (multi-cloud), CloudFormation (AWS), Ansible, Pulumi.</>, tags: ['tools'], variant: 'outline' },
+    { title: 'Consistency', body: <>Eliminates configuration drift and ensures identical environments across deployments.</>, tags: ['benefit'], variant: 'accentAlt' },
+    { title: 'Version Control', body: <>Infrastructure changes can be tracked, reviewed, and rolled back like application code.</>, tags: ['versioning'], variant: 'glass' },
+    { title: 'Automation', body: <>Rapid deployment and scaling of infrastructure through automated provisioning.</>, tags: ['automation'], variant: 'outline' },
+    { title: 'Multi-Cloud', body: <>Tools like Terraform enable infrastructure management across multiple cloud providers.</>, tags: ['cloud'], variant: 'accentAlt' },
+    { title: 'Collaboration', body: <>Teams can review, approve, and collaborate on infrastructure changes through code reviews.</>, tags: ['teamwork'], variant: 'glass' }
+  ]}
+/>
